@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+    <input name="so1" value="" />
+    <input name="so2" value="" />
+        <div id="kq">0</div>
+
+    <input type="submit" value="+" onclick="(function(){
+        document.getElementById('kq').innerHTML =
+    parseInt(document.getElementsByName('so1')[0].value)
+    +
+    parseInt(document.getElementsByName('so2')[0].value);
+})()">
+
+    <input type="submit" value="-" onclick="(function(){
+        document.getElementById('kq').innerHTML =
+    parseInt(document.getElementsByName('so1')[0].value)
+-
+    parseInt(document.getElementsByName('so2')[0].value);
+})()">
+
+    <input type="submit" value="*" onclick="(function(){
+        document.getElementById('kq').innerHTML =
+    parseInt(document.getElementsByName('so1')[0].value)
+*
+    parseInt(document.getElementsByName('so2')[0].value);
+})()">
+
+    <input type="submit" value="/" onclick="(function(){
+        document.getElementById('kq').innerHTML =
+    parseInt(document.getElementsByName('so1')[0].value)
+/
+    parseInt(document.getElementsByName('so2')[0].value);
+})()">
+</body>
+</html>
